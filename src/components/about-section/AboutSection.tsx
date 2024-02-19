@@ -1,19 +1,15 @@
 import { FC } from 'react'
 import Image from 'next/image'
-import { TabContext } from '@/components'
+import { TabAbout } from '@/components'
 import { tabItemsData, tabTextData } from './aboutSection.utils'
 
-interface AboutSectionProps {
-
-}
-
-const AboutSection: FC<AboutSectionProps> = () => {
+const AboutSection: FC = () => {
 
   return (
-    <section className="text-white flex flex-col items-center lg:flex-row lg:justify-between lg:items-center mt-[150px] 2xl:p-16 xl:gap-28 lg:gap-[80px] " >
-      <div className="lg:w-[50%] w-[80%]">
+    <section className="text-white flex flex-col items-center lg:flex-row lg:justify-between lg:items-center mt-[150px] 2xl:p-16 xl:gap-28 lg:gap-[80px] py-12" >
+      <div className="lg:w-[50%] md:w-[80%] w-[100%]">
         <Image
-          src="/about-me.jpg"
+          src="/images/about-me.jpg"
           alt="My Avatar"
           width={500}
           height={500}
@@ -21,9 +17,9 @@ const AboutSection: FC<AboutSectionProps> = () => {
         />
       </div>
       <div className="lg:w-[50%] w-full">
-        <h1 className="xl:text-4xl  text-4xl font-bold text-white mb-4 lg:mt-0 mt-[50px]">About</h1>
+        <h1 className="xl:text-4xl  text-4xl font-bold text-white mb-4 lg:mt-0 mt-[50px] phone:text-center">About</h1>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
-        <p className="text-base xl:text-lg"> I'm a motivated and dedicated front-end developer with a
+        <p className="text-base xl:text-lg phone:text-center"> I'm a motivated and dedicated front-end developer with a
           strong focus on creating user-friendly interfaces and
           developing cutting-edge web applications. I am currently
           pursuing my second-grade studies at Vilnius University,
@@ -32,7 +28,7 @@ const AboutSection: FC<AboutSectionProps> = () => {
           development skills, knowledge of information systems, and
           cybersecurity to contribute to the development of cutting-edge web applications.</p>
 
-        <TabContext titleTab={tabItemsData} tabTextData={tabTextData} />
+        <TabAbout titleTab={tabItemsData} tabTextData={tabTextData} />
       </div>
     </section>
   )

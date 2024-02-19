@@ -1,0 +1,1 @@
+export type { TabCardData } from './tabCardData'

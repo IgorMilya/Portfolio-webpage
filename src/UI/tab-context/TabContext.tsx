@@ -1,12 +1,12 @@
 import { FC } from 'react'
 import Link from 'next/link'
 
-interface TabTextProps {
+interface TabContextProps {
   text: string[],
   value: string
 }
 
-const TabText: FC<TabTextProps> = ({text, value}) => {
+const TabContext: FC<TabContextProps> = ({text, value}) => {
 
   return (
     <>
@@ -22,4 +22,4 @@ const TabText: FC<TabTextProps> = ({text, value}) => {
   )
 }
 
-export default TabText
+export default TabContext

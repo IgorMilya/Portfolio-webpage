@@ -1,4 +1,4 @@
-import { TabItemsDataTypes, TabTextTypes } from '@/types/ComponentsItemTypes'
+import { TabItemsDataTypes, TabTextTypes } from '@/types'
 
 export const tabItemsData: TabItemsDataTypes[] = ['skills', 'education', 'certificates']
 export const tabTextData: TabTextTypes[] = [

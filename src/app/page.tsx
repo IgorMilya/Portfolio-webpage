@@ -1,15 +1,16 @@
-import { AboutSection, GreetingSection, Header } from '@/components'
-import { Navbar } from '@/UI'
+import { AboutSection, ContactSection, GreetingSection, Header, ProjectsSection } from '@/components'
 import { dataLinks } from '@/app/home.utils'
 
 const Home = () => {
   return (
     <>
-      <Header dataLinks={dataLinks}/>
+      <Header dataLinks={dataLinks} />
       <main className="flex min-h-screen flex-col pt-24">
         <div className="container mx-auto px-12 py-4">
           <GreetingSection />
           <AboutSection />
+          <ProjectsSection />
+          <ContactSection />
         </div>
       </main>
     </>

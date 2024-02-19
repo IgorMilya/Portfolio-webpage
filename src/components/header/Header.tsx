@@ -1,8 +1,7 @@
 'use client'
 import { FC, useState } from 'react'
 import { LinkItemType } from '@/types'
-import { Logo, Navbar } from '@/UI'
-import MobileMenu from '../../UI/mobile-menu/MobileMenu'
+import { Logo, MobileMenu, Navbar } from '@/UI'
 
 interface HeaderProps {
   dataLinks: LinkItemType[]

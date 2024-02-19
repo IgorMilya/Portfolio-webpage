@@ -1,4 +1,4 @@
-import { TabItemsDataTypes } from '@/types/ComponentsItemTypes'
+import { TabItemsDataTypes } from '@/types'
 
 export type TabTextTypes = {
   text: string[],

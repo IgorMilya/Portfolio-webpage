@@ -1,0 +1,1 @@
+export { useTabHook } from './useTabHook'
