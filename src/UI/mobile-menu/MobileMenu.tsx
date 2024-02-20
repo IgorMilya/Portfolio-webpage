@@ -1,6 +1,4 @@
-'use client'
-
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { Button } from '@/UI'
 

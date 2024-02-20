@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     screens: {
       'phone': { 'min': '340px', 'max': '768px' },
+      'ph': '340px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',

@@ -6,7 +6,7 @@ import { tabItemsData, tabTextData } from './aboutSection.utils'
 const AboutSection: FC = () => {
 
   return (
-    <section className="text-white flex flex-col items-center lg:flex-row lg:justify-between lg:items-center mt-[150px] 2xl:p-16 xl:gap-28 lg:gap-[80px] py-12" >
+    <section id="about" className="text-white flex flex-col items-center lg:flex-row lg:justify-between lg:items-center mt-[150px] xl:gap-28 lg:gap-[80px] 2xl:pt-24 xl:pt-24 lg:pt-24 pt-20" >
       <div className="lg:w-[50%] md:w-[80%] w-[100%]">
         <Image
           src="/images/about-me.jpg"

@@ -1,9 +1,9 @@
 'use client'
-
 import { FC } from 'react'
-import { TabItem, TabContext } from '@/UI'
+import { TabItem, TabContext, AnimateWrapper } from '@/UI'
 import { TabTextTypes } from '@/types'
 import { useTabHook } from '@/hooks'
+import { tabContextVariants, variant } from './tabAbout.utils'
 
 interface TabAboutProps {
   titleTab: string[]
@@ -12,8 +12,8 @@ interface TabAboutProps {
 
 const TabAbout: FC<TabAboutProps> = ({ titleTab, tabTextData }) => {
   const { value, handleTabChange } = useTabHook('skills')
-  const activeTab = 'mr-3 hover:text-white font-semibold text-white border-b border-purple-500';
-  const notActiveTab = 'mr-3 hover:text-white text-[#ADB7BE]';
+  const activeTab = 'mr-3 hover:text-white font-semibold text-white'
+  const notActiveTab = 'mr-3 hover:text-white text-[#ADB7BE]'
 
   return (
     <>
@@ -22,13 +22,21 @@ const TabAbout: FC<TabAboutProps> = ({ titleTab, tabTextData }) => {
           <TabItem key={item}
                    data={item}
                    className={value === item ? activeTab : notActiveTab}
-                   onClick={handleTabChange} />,
+                   onClick={handleTabChange}>
+            <AnimateWrapper className="border-b border-[#4C10BE]" variants={variant}
+                            animate={value === item ? 'active' : 'default'} />
+          </TabItem>,
         )}
       </div>
 
       <ul className="mt-8 list-disc pl-6">
         {tabTextData.map(({ text, tabValue }) => (
-          !!value && tabValue.includes(value) && (<TabContext key={`text${text}`} text={text} value={value} />)
+          !!value && tabValue.includes(value) && (
+            <AnimateWrapper key={`text${text}`} variants={tabContextVariants} animate="animate" initial="initial"
+                            transition={{ duration: 0.5 }}>
+              <TabContext text={text} value={value} />
+            </AnimateWrapper>
+          )
         ))}
       </ul>
     </>

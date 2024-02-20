@@ -1,4 +1,4 @@
-import { AboutSection, ContactSection, GreetingSection, Header, ProjectsSection } from '@/components'
+import { AboutSection, ContactSection, GreetingSection, Header, ProjectsSection, Footer } from '@/components'
 import { dataLinks } from '@/app/home.utils'
 
 const Home = () => {
@@ -13,6 +13,7 @@ const Home = () => {
           <ContactSection />
         </div>
       </main>
+      <Footer />
     </>
   )
 }

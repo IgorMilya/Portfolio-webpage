@@ -6,7 +6,7 @@ import { Github, Linkedin } from '@/assets/icon'
 const ContactsTools: FC = () => {
 
   return (
-    <div className="z-10 w-[50%] phone:w-full">
+    <div className="w-[50%] phone:w-full">
       {/* eslint-disable-next-line react/no-unescaped-entities */}
       <h5 className="text-xl font-bold text-white my-2"> Let's Connect</h5>
       {/* eslint-disable-next-line react/no-unescaped-entities */}

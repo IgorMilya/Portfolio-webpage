@@ -1,4 +1,3 @@
-'use client'
 import React, { FC } from 'react'
 import { useField } from 'formik'
 import { ErrorMessage } from '@/UI'
