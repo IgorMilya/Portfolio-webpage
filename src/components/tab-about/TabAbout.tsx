@@ -13,7 +13,7 @@ interface TabAboutProps {
 const TabAbout: FC<TabAboutProps> = ({ titleTab, tabTextData }) => {
   const { value, handleTabChange } = useTabHook('skills')
   const activeTab = 'mr-3 hover:text-white font-semibold text-white'
-  const notActiveTab = 'mr-3 hover:text-white text-[#ADB7BE]'
+  const notActiveTab = 'mr-3 hover:text-white text-secondary'
 
   return (
     <>
@@ -23,7 +23,7 @@ const TabAbout: FC<TabAboutProps> = ({ titleTab, tabTextData }) => {
                    data={item}
                    className={value === item ? activeTab : notActiveTab}
                    onClick={handleTabChange}>
-            <AnimateWrapper className="border-b border-[#4C10BE]" variants={variant}
+            <AnimateWrapper className="border-b border-primary-darkBlue" variants={variant}
                             animate={value === item ? 'active' : 'default'} />
           </TabItem>,
         )}

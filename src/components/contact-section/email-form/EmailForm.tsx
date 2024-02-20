@@ -71,7 +71,7 @@ const EmailForm: FC = () => {
             labelText="Message"
           />
         </div>
-        <Button className="bg-[#4C10BE] hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+        <Button className="bg-primary-darkBlue hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
                 linkageToForm="email-form-send" type="submit">Send Message</Button>
 
         {emailSuccess && (<p className="text-green-500 text-sm mt-2">Email sent successfully</p>)}

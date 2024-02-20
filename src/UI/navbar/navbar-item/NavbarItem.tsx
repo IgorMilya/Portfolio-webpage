@@ -12,7 +12,7 @@ const NavbarItem: FC<NavbarItemProps> = ({ data }) => {
   const titleUpper = firstLetterUpperCase(title);
 
   return (
-    <Link href={link} className="text-[#ADB7BE] sm:text-xl  hover:text-white">
+    <Link href={link} className="text-secondary sm:text-xl  hover:text-white">
       <div className="phone:w-[100%]">
         {titleUpper}
       </div>

@@ -14,7 +14,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode; }>) => {
   return (
     <html lang="en">
     <body className={inter.className}>
-    <div className="bg-blackPhon">
+    <div className="bg-background-black">
       {children}
     </div>
     </body>

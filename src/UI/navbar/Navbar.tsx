@@ -11,7 +11,7 @@ const Navbar: FC<NavbarProps> = ({ data, mobileMenu }) => {
 
   return (
     <nav
-      className={`menu md:w-auto phone:w-[100%] phone:absolute phone:top-14 phone:left-1/2 phone:transform phone:-translate-x-1/2 phone:bg-blackPhon ${!mobileMenu && 'phone:hidden'}`}
+      className={`menu md:w-auto phone:w-[100%] phone:absolute phone:top-14 phone:left-1/2 phone:transform phone:-translate-x-1/2 phone:bg-background-black ${!mobileMenu && 'phone:hidden'}`}
       id="navbar">
       <ul className="flex pt-4 md:p-0 md:flex-row md:space-x-8 mt-0 phone:flex-col phone:pt-0">
         {data.map(item => (

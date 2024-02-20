@@ -13,7 +13,7 @@ const Header: FC<HeaderProps> = ({ dataLinks }) => {
   const handleBurger = () => setNavbarOpen(!navbarOpen)
 
   return (
-    <header className="fixed border-b border-[#33353F] top-0 left-0 right-0 z-10 bg-blackPhon">
+    <header className="fixed border-b border-[#33353F] top-0 left-0 right-0 z-10 bg-background-black">
       <div className="flex flex-wrap items-center justify-between mx-auto lg:py-4 px-4 py-2">
         <Logo />
         <MobileMenu mobileMenu={navbarOpen} onClick={handleBurger} />

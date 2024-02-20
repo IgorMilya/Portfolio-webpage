@@ -12,7 +12,7 @@ interface TextAnimationProps {
 const TextAnimation: FC<TextAnimationProps> = ({ sequence, breakText = false }) => {
   return (
     <>
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-blue-600 to-cyan-300">Hello,
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-primary-blue-600 to-cyan-300">Hello,
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         I'm{' '}</span>
       {breakText && <br />}

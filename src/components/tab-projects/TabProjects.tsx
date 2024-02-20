@@ -17,8 +17,8 @@ const TabProjects: FC<TabProjectsProps> = ({ titleTab, tabCardData }) => {
   const isInView = useInView(ref, { once: true })
 
 
-  const activeTab = 'text-white border-[#4C10BE] rounded-full border-2 px-6 py-3 text-xl'
-  const notActiveTab = 'text-[#ADB7BE] border-slate-600 hover:border-white rounded-full border-2 px-6 py-3 text-xl'
+  const activeTab = 'text-white border-primary-darkBlue rounded-full border-2 px-6 py-3 text-xl'
+  const notActiveTab = 'text-secondary border-slate-600 hover:border-white rounded-full border-2 px-6 py-3 text-xl'
   const filteredCardData = tabCardData.filter(({ tag, ...rest }) => !!value && tag.includes(value))
 
   return (
