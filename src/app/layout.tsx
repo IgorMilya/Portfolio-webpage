@@ -14,9 +14,6 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <>
-      <Head>
-        <meta name="freelancehunt" content="95202bcf13b6d79" />
-      </Head>
       <html lang="en">
       <body className={inter.className}>
       <div className="bg-background-black">
