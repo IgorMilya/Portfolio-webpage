@@ -32,10 +32,12 @@ const GreetingSection: FC = () => {
           <p className="text-secondary text-base sm:text-lg mb-6 lg:text-xl">He crafts responsive websites where
             technologies meet creativity. With great power comes great electricity bill</p>
           <div>
-            <Button
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-indigo-900 via-primary-blue-700 to-cyan-400 hover:bg-slate-200 text-white">
-              <Link href="#contacts">Hire Me</Link>
-            </Button>
+            <Link href="#contacts">
+              <Button
+                className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-indigo-900 via-primary-blue-700 to-cyan-400 hover:bg-slate-200 text-white">
+                Hire Me
+              </Button>
+            </Link>
             <Button onClick={handleDownload}
                     className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-r from-indigo-500 via-primary-blue-600 to-cyan-300 hover:bg-slate-800 mt-3">
               <span className="block bg-background-black hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
