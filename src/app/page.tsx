@@ -1,6 +1,7 @@
 import { AboutSection, ContactSection, GreetingSection, Header, ProjectsSection, Footer } from '@/components'
 import { dataLinks } from '@/app/home.utils'
 
+
 const Home = () => {
   return (
     <>

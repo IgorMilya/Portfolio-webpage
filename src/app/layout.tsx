@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
-import type { Metadata } from 'next'
+import Head from 'next/head'
+import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -10,15 +11,20 @@ export const metadata: Metadata = {
   description: 'My own website portfolio',
 }
 
-const RootLayout = ({ children }: Readonly<{ children: ReactNode; }>) => {
+const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <html lang="en">
-    <body className={inter.className}>
-    <div className="bg-background-black">
-      {children}
-    </div>
-    </body>
-    </html>
+    <>
+      <Head>
+        <meta name="freelancehunt" content="95202bcf13b6d79" />
+      </Head>
+      <html lang="en">
+      <body className={inter.className}>
+      <div className="bg-background-black">
+        {children}
+      </div>
+      </body>
+      </html>
+    </>
   )
 }
 
