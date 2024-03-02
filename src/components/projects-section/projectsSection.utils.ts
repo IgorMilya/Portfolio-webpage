@@ -11,14 +11,14 @@ export const tabCardData: TabCardData[] = [
     gitUrl: 'https://github.com/IgorMilya/project-lost',
     previewUrl: 'https://project-lost.vercel.app/',
   },
-  // {
-  //   title: 'Simple E-Shop',
-  //   description: 'Written on React with ReactContext. Used JSON-DB for storing data',
-  //   image: 'images/budget-cli.png',
-  //   tag: ['all', 'web'],
-  //   gitUrl: 'https://github.com/IgorMilya/Simple-E-Shop/tree/master',
-  //   previewUrl: 'https://github.com/IgorMilya/Budget-CLI',
-  // },
+  {
+    title: 'Quiz',
+    description: 'Written on React with responsive layout',
+    image: 'images/quiz.png',
+    tag: ['all', 'web'],
+    gitUrl: 'https://github.com/IgorMilya/Quiz',
+    previewUrl: 'https://quiz-sigma-pied-62.vercel.app',
+  },
   {
     title: 'Next.js Portfolio Website',
     description: 'Responsive website',
