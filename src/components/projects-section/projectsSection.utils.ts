@@ -22,7 +22,7 @@ export const tabCardData: TabCardData[] = [
   {
     title: 'TODO-List',
     description: 'Implemented user login using Firebase. Also, I used Rust for compiling and tailwind. After it toggles to the server call is made to check the user's permissions. All removed items is grayed out and be seen only when the toggler is on.',
-    image: 'images/quiz.png',
+    image: 'images/TODO.png',
     tag: ['all', 'web'],
     gitUrl: 'https://github.com/IgorMilya/TODO-List',
     previewUrl: 'https://todo-list-puce-iota.vercel.app',
